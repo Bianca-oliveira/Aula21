@@ -32,3 +32,13 @@ def deletar(request):
         return redirect('aluno/listar')
     return render(request, 'lista.html')
 
+def home(request):
+    return render(request, 'home.html')
+
+def login(request):
+    if request.method == 'POST':
+       item = Login.objects.get(id=id)
+    
+
+    return render(request, 'login.html')
+
